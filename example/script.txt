@@ -1,0 +1,17 @@
+$otherVariable = Markus
+
+$characterName < What's your name?
+
+Daniel: Hey, I'm $characterName, and I may also include scripting, {
+    vm.getVariable('characterName').toLowerCase()
+}, which will be replaced with the evaluated result.
+
+Tom: Hey $characterName! What are you doing here?
+
+$route
+? fight "I'm looking for a fight!"
+? drink "I'm looking for a drink!"
+
+Tom: Well, you chose $route. I'm not sure what that means, but I'm sure it's important.
+
+Daniel: Do you know where I can find $otherVariable?

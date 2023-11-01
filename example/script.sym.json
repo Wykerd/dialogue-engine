@@ -1,0 +1,92 @@
+{
+    "characters": [
+        [
+            "Daniel",
+            0
+        ],
+        [
+            "Tom",
+            1
+        ]
+    ],
+    "strings": [
+        [
+            "Markus",
+            0
+        ],
+        [
+            "What's your name?",
+            1
+        ],
+        [
+            "Hey, I'm ",
+            2
+        ],
+        [
+            ", and I may also include scripting, ",
+            3
+        ],
+        [
+            "\n    vm.getVariable('characterName').toLowerCase()\n",
+            4
+        ],
+        [
+            ", which will be replaced with the evaluated result.",
+            5
+        ],
+        [
+            "Hey ",
+            6
+        ],
+        [
+            "! What are you doing here?",
+            7
+        ],
+        [
+            "I'm looking for a fight!",
+            8
+        ],
+        [
+            "fight",
+            9
+        ],
+        [
+            "I'm looking for a drink!",
+            10
+        ],
+        [
+            "drink",
+            11
+        ],
+        [
+            "Well, you chose ",
+            12
+        ],
+        [
+            ". I'm not sure what that means, but I'm sure it's important.",
+            13
+        ],
+        [
+            "Do you know where I can find ",
+            14
+        ],
+        [
+            "?",
+            15
+        ]
+    ],
+    "variables": [
+        [
+            "otherVariable",
+            0
+        ],
+        [
+            "characterName",
+            1
+        ],
+        [
+            "route",
+            2
+        ]
+    ]
+}

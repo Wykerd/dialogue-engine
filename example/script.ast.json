@@ -1,0 +1,176 @@
+{
+    "type": "Document",
+    "contents": [
+        {
+            "type": "Assignment",
+            "key": "otherVariable",
+            "value": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "Text",
+                        "contents": [
+                            {
+                                "type": "String",
+                                "contents": "Markus"
+                            }
+                        ],
+                        "enclosed": "\""
+                    }
+                ]
+            },
+            "isPrompt": false
+        },
+        {
+            "type": "Assignment",
+            "key": "characterName",
+            "value": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "String",
+                        "contents": "What's your name?"
+                    }
+                ]
+            },
+            "isPrompt": true
+        },
+        {
+            "type": "Dialogue",
+            "contents": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "String",
+                        "contents": "Hey, I'm "
+                    },
+                    {
+                        "type": "Expression",
+                        "key": "characterName"
+                    },
+                    {
+                        "type": "String",
+                        "contents": ", and I may also include scripting, "
+                    },
+                    {
+                        "type": "Script",
+                        "contents": [
+                            {
+                                "type": "String",
+                                "contents": "\n    vm.getVariable('characterName').toLowerCase()\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "String",
+                        "contents": ", which will be replaced with the evaluated result."
+                    }
+                ]
+            },
+            "speaker": "Daniel"
+        },
+        {
+            "type": "Dialogue",
+            "contents": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "String",
+                        "contents": "Hey "
+                    },
+                    {
+                        "type": "Expression",
+                        "key": "characterName"
+                    },
+                    {
+                        "type": "String",
+                        "contents": "! What are you doing here?"
+                    }
+                ]
+            },
+            "speaker": "Tom"
+        },
+        {
+            "type": "AssignmentSelect",
+            "key": "route",
+            "options": [
+                {
+                    "type": "AssignmentChoice",
+                    "value": {
+                        "type": "ChoiceValue",
+                        "key": "fight",
+                        "prompt": {
+                            "type": "Text",
+                            "contents": [
+                                {
+                                    "type": "String",
+                                    "contents": "I'm looking for a fight!"
+                                }
+                            ],
+                            "enclosed": "\""
+                        }
+                    }
+                },
+                {
+                    "type": "AssignmentChoice",
+                    "value": {
+                        "type": "ChoiceValue",
+                        "key": "drink",
+                        "prompt": {
+                            "type": "Text",
+                            "contents": [
+                                {
+                                    "type": "String",
+                                    "contents": "I'm looking for a drink!"
+                                }
+                            ],
+                            "enclosed": "\""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Dialogue",
+            "contents": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "String",
+                        "contents": "Well, you chose "
+                    },
+                    {
+                        "type": "Expression",
+                        "key": "route"
+                    },
+                    {
+                        "type": "String",
+                        "contents": ". I'm not sure what that means, but I'm sure it's important."
+                    }
+                ]
+            },
+            "speaker": "Tom"
+        },
+        {
+            "type": "Dialogue",
+            "contents": {
+                "type": "Text",
+                "contents": [
+                    {
+                        "type": "String",
+                        "contents": "Do you know where I can find "
+                    },
+                    {
+                        "type": "Expression",
+                        "key": "otherVariable"
+                    },
+                    {
+                        "type": "String",
+                        "contents": "?"
+                    }
+                ]
+            },
+            "speaker": "Daniel"
+        }
+    ]
+}

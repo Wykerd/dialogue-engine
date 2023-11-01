@@ -1,0 +1,180 @@
+[
+    {
+        "type": "Label",
+        "target": 0
+    },
+    {
+        "type": "ReadStr",
+        "string": 0
+    },
+    {
+        "type": "SetVariable",
+        "variable": 0
+    },
+    {
+        "type": "ReadStr",
+        "string": 1
+    },
+    {
+        "type": "Prompt"
+    },
+    {
+        "type": "SetVariable",
+        "variable": 1
+    },
+    {
+        "type": "SetCharacter",
+        "character": 0
+    },
+    {
+        "type": "ReadStr",
+        "string": 2
+    },
+    {
+        "type": "ReadVariable",
+        "variable": 1
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 3
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 4
+    },
+    {
+        "type": "EvaluateScript"
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 5
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ShowDialogue"
+    },
+    {
+        "type": "SetCharacter",
+        "character": 1
+    },
+    {
+        "type": "ReadStr",
+        "string": 6
+    },
+    {
+        "type": "ReadVariable",
+        "variable": 1
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 7
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ShowDialogue"
+    },
+    {
+        "type": "MoveRegReg",
+        "from": 1,
+        "to": 3
+    },
+    {
+        "type": "ReadStr",
+        "string": 8
+    },
+    {
+        "type": "ReadStr",
+        "string": 9
+    },
+    {
+        "type": "ReadStr",
+        "string": 10
+    },
+    {
+        "type": "ReadStr",
+        "string": 11
+    },
+    {
+        "type": "SubRegReg",
+        "into": 3,
+        "registerLeft": 1,
+        "registerRight": 3
+    },
+    {
+        "type": "PickOption",
+        "register": 3
+    },
+    {
+        "type": "SetVariable",
+        "variable": 2
+    },
+    {
+        "type": "SetCharacter",
+        "character": 1
+    },
+    {
+        "type": "ReadStr",
+        "string": 12
+    },
+    {
+        "type": "ReadVariable",
+        "variable": 2
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 13
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ShowDialogue"
+    },
+    {
+        "type": "SetCharacter",
+        "character": 0
+    },
+    {
+        "type": "ReadStr",
+        "string": 14
+    },
+    {
+        "type": "ReadVariable",
+        "variable": 0
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ReadStr",
+        "string": 15
+    },
+    {
+        "type": "Concatenate"
+    },
+    {
+        "type": "ShowDialogue"
+    },
+    {
+        "type": "EndOfScript"
+    }
+]
